@@ -238,7 +238,7 @@ function type(d) {
 //*******************************************************************
 
 function createEnglishChord(location){
-    d3.csv('../public_html/data/matrix.csv', function (error, data) {
+    d3.csv('data/matrix.csv', function (error, data) {
     console.log(data);
     var en_mpr = chordMpr(data);
 
@@ -256,7 +256,7 @@ function createEnglishChord(location){
 }
 
 function createChineseChord(location){
-    d3.csv('../public_html/data/chinese_matrix.csv', function (error, data) {
+    d3.csv('data/chinese_matrix.csv', function (error, data) {
     console.log(data);
     var zh_mpr = chordMpr(data);
 
